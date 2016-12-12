@@ -14,6 +14,7 @@ class CreateTestDataTable extends Migration
     public function up()
     {
         Schema::create('test_data', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('field1')->nullable();
             $table->string('field2')->nullable();
             $table->string('field3')->nullable();

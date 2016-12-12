@@ -23,3 +23,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:api');
 
 Route::get('set-location', 'TestController@setLocation');
+Route::post('set-location', 'TestController@setLocation');
